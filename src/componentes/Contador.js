@@ -5,14 +5,14 @@ import Padrao from '../estilo/Padrao'
 export default class Contador extends React.Component {
 
     state = {
-        numero: 1
+        numero: 0
     } 
 
     maisUm ()  {
         this.setState({ numero: this.state.numero + 1 })
     }
     limpar = () => { // 1° Forma de fazer arrow fuction
-        this.setState({ numero: 1 })
+        this.setState({ numero: 0 })
     }
     render() {
         return (
