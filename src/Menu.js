@@ -4,13 +4,17 @@ import Simples from "../src/componentes/Simples";
 import ParImpar from "../src/componentes/ParImpar";
 import Contador from './componentes/Contador';
 import Plataformas from './componentes/Plataformas';
+import ValidarProps from './componentes/ValidarProps';
 
 export default createDrawerNavigator({
+    ValidarProps: {
+        screen : () => <ValidarProps ano={1} />
+    },
     Plataformas: {
-        screen : Plataformas
+        screen: Plataformas
     },
     Contador: {
-        screen : () => <Contador numero={8} />
+        screen: () => <Contador numero={8} />
     },
     ParImpar: {
         screen: () => <ParImpar numero={30} />,
@@ -19,4 +23,4 @@ export default createDrawerNavigator({
     Simples: {
         screen: () => <Simples texto='Princesa' />
     }
-}, { drawerWidth: 500})
+}, { drawerWidth: 500 })
