@@ -3,8 +3,12 @@ import { createDrawerNavigator } from 'react-navigation';
 import Simples from "../src/componentes/Simples";
 import ParImpar from "../src/componentes/ParImpar";
 import Contador from './componentes/Contador';
+import Plataformas from './componentes/Plataformas';
 
 export default createDrawerNavigator({
+    Plataformas: {
+        screen : Plataformas
+    },
     Contador: {
         screen : () => <Contador numero={8} />
     },
