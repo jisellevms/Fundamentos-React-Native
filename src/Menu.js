@@ -7,8 +7,14 @@ import Plataformas from './components/Plataformas';
 import ValidarProps from './components/ValidarProps';
 import Evento from './components/Evento';
 import Avo  from './components/ComunicacaoDIreta';
+import  TextoSincronizado  from './components/ComunicacaoIndireta';
 
 export default createDrawerNavigator({
+    TextoSincronizado : {
+        screen : () => <TextoSincronizado />,
+        navigationOptions: { title: 'Texto Sincronizado' }
+
+    },
     Avo:{
         screen: () => <Avo nome='Avô' sobrenome='Martins'/>
     },
@@ -31,4 +37,4 @@ export default createDrawerNavigator({
     Simples: {
         screen: () => <Simples texto='Princesa' />
     }
-}, { drawerWidth: 500 })
+}, { drawerWidth: 300 })
