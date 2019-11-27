@@ -1,13 +1,17 @@
 import React from 'react';
 import { createDrawerNavigator } from 'react-navigation';
-import Simples from "../src/componentes/Simples";
-import ParImpar from "../src/componentes/ParImpar";
-import Contador from './componentes/Contador';
-import Plataformas from './componentes/Plataformas';
-import ValidarProps from './componentes/ValidarProps';
-import Evento from './componentes/Evento';
+import Simples from "./components/Simples";
+import ParImpar from "./components/ParImpar";
+import Contador from './components/Contador';
+import Plataformas from './components/Plataformas';
+import ValidarProps from './components/ValidarProps';
+import Evento from './components/Evento';
+import Avo  from './components/ComunicacaoDIreta';
 
 export default createDrawerNavigator({
+    Avo:{
+        screen: () => <Avo nome='Avô' sobrenome='Martins'/>
+    },
     Evento: {
         screen : () => <Evento />
     },
