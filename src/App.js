@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
-import Simples from './componentes/Simples';
-import ParImpar from './componentes/ParImpar';
+import Simples from './components/Simples';
+import ParImpar from './components/ParImpar';
 
 export default class App extends React.Component{
     render(){

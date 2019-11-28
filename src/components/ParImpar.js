@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text } from 'react-native';
-import Padrao from '../estilo/Padrao'
+import Padrao from '../style/Padrao'
 
 export default props =>
     <View>
